@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veritas Acadêmico Pro — Plataforma Híbrida Idônea (ABNT & Vancouver • Entrelinhas 1,5)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    if (window.pdfjsLib) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0f172a; }
+    .academic-paper { font-family: 'Merriweather', Georgia, serif; line-height: 1.5 !important; font-size: 12pt !important; text-align: justify; }
+    .hl-red { background-color: #fee2e2; border-bottom: 2px solid #ef4444; color: #7f1d1d; padding: 2px 4px; border-radius: 4px; cursor: pointer; }
+    .hl-green { background-color: #dcfce7; border-bottom: 2px solid #10b981; color: #064e3b; padding: 2px 4px; border-radius: 4px; }
+    .hl-purple { background-color: #f3e8ff; border-bottom: 2px dashed #a855f7; color: #581c87; padding: 2px 4px; border-radius: 4px; cursor: pointer; }
+    .hl-blue { background-color: #dbeafe; border-bottom: 2px solid #3b82f6; color: #1e3a8a; padding: 2px 4px; border-radius: 4px; }
+    .nav-btn-active { background: linear-gradient(90deg, #059669 0%, #0d9488 100%); color: white !important; }
+  </style>
+</head>
+<body class="h-screen overflow-hidden flex">
+  <aside class="w-72 bg-slate-900 text-slate-300 flex flex-col justify-between shrink-0 h-full border-r border-slate-800 p-4">
+    <div class="space-y-4">
+      <div class="flex items-center gap-3 pb-3 border-b border-slate-800">
+        <div class="w-10 h-10 rounded-2xl bg-emerald-600 flex items-center justify-center font-black text-white">VA</div>
+        <div>
+          <h1 class="font-extrabold text-white text-sm">Veritas Acadêmico Pro</h1>
+          <span class="text-[10px] text-emerald-400 block">Arquitetura Híbrida Idônea</span>
+        </div>
+      </div>
+      <p class="text-xs text-slate-400">Conectado ao motor <code>/api/audit</code> (Node.js + OpenAlex + Crossref + Semantic Scholar).</p>
+    </div>
+    <div class="text-[10px] text-slate-400 border-t border-slate-800 pt-3">
+      Espaçamento 1,5 • Fonte 12pt • ABNT / Vancouver / APA 7
+    </div>
+  </aside>
+  <main class="flex-1 p-8 overflow-y-auto">
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm space-y-4">
+      <h2 class="text-xl font-black text-slate-900">Veritas Acadêmico Pro — Pronto no Repositório</h2>
+      <p class="text-xs text-slate-600">Suba a pasta completa para o GitHub e conecte na Vercel para ativar o endpoint serverless <code>/api/audit</code>.</p>
+    </div>
+  </main>
+</body>
+</html>

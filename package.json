@@ -1,0 +1,19 @@
+{
+  "name": "veritas-academico-pro",
+  "version": "2.0.0",
+  "description": "Plataforma Hibrida Idonea de Integridade Academica, Similaridade N-Gram, Auditoria ABNT/Vancouver/APA e RAG Gemini",
+  "main": "api/audit.js",
+  "scripts": {
+    "start": "node api/audit.js",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
