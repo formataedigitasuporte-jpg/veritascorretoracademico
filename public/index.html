@@ -127,10 +127,10 @@
                             <p class="text-xs text-slate-400">Cole seu texto acadêmico abaixo ou carregue um arquivo (.txt, .docx, .pdf). Capa e pré-textuais são isolados automaticamente.</p>
                         </div>
                         <div class="flex space-x-2">
-                            <label class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold cursor-pointer transition shadow flex items-center space-x-1.5">
-                                <span>Carregar Arquivo (.docx / .pdf / .txt)</span>
-                                <input type="file" id="shared-file-input" accept=".txt,.docx,.pdf" class="hidden" onchange="handleFileLoaded(event)">
-                            </label>
+                           <label class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold cursor-pointer transition shadow flex items-center space-x-1.5">
+    <span>Carregar do Computador (.docx / .pdf / .txt)</span>
+    <input type="file" id="shared-file-input" accept=".txt,.docx,.pdf" class="hidden" onchange="handleFileLoaded(event)">
+</label>
                             <button onclick="clearTextData()" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-semibold transition border border-slate-700">Limpar</button>
                             <button onclick="runFullSystemAudit()" class="px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-bold transition shadow">Auditar Todas as Abas</button>
                         </div>
